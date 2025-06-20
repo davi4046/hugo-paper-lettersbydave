@@ -1,0 +1,12 @@
+<div class="mb-4 flex items-start gap-2">
+  <input
+    type="checkbox"
+    name="{{ .name }}"
+    id="{{ .id | default .name }}"
+    value="{{ .value | default "yes" }}"
+    class="mt-1"
+  />
+  <label for="{{ .id | default .name }}" class="text-sm">
+    {{ .label }}
+  </label>
+</div>
